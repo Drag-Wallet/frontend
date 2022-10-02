@@ -1,8 +1,8 @@
 import { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
-  appId: 'io.ionic.starter',
-  appName: 'tinku-wallet',
+  appId: 'com.drag.wallet',
+  appName: 'Drag Wallet',
   webDir: 'www',
   bundledWebRuntime: false
 };
