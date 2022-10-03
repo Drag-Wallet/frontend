@@ -1,0 +1,39 @@
+<ion-content>
+  <ion-grid>
+    <ion-row class="ion-justify-content-center">
+      <ion-col size-lg="6" size-md="8">
+        <ion-card>
+          <ion-card-header>
+            <ion-card-subtitle>Update profile details</ion-card-subtitle>
+            <ion-card-title>Update Profile</ion-card-title>
+          </ion-card-header>
+
+          <ion-card-content>
+            <ion-item class="ion-no-padding">
+              <ion-label position="floating">First Name</ion-label>
+              <ion-input type="text" inputmode="text"></ion-input>
+            </ion-item>
+            <ion-item class="ion-no-padding">
+              <ion-label position="floating">Last Name</ion-label>
+              <ion-input type="text" inputmode="text"></ion-input>
+            </ion-item>
+            <ion-item class="ion-no-padding">
+              <ion-label position="floating">Phone Number</ion-label>
+              <ion-input type="tel" inputmode="phone"></ion-input>
+            </ion-item>
+            <div class="ion-margin-top">
+              <ion-button type="submit">Save</ion-button>
+            </div>
+            <div class="ion-margin-top">
+              <p>Or</p>
+              <ion-button type="button" (click)="goBack()">
+                <ion-icon name="arrow-back-outline"></ion-icon>
+                login with different email
+              </ion-button>
+            </div>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

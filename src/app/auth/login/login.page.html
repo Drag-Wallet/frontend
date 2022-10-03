@@ -17,9 +17,19 @@
               <ion-label position="floating">Password</ion-label>
               <ion-input type="password" inputmode="text"></ion-input>
             </ion-item>
-            <div class="ion-margin-top ion-justify-content-between">
-              <ion-button type="submit">Sign In</ion-button>
+            <div class="ion-margin-top">
+              <ion-button type="submit" [routerLink]="['/auth/profile_edit']">Sign In</ion-button>
               <ion-button type="button" class="ion-float-right">Sign Up</ion-button>
+            </div>
+            <div class="ion-margin-top">
+              <p>Or Login with</p>
+              <ion-button type="button">
+                <ion-icon slot="icon-only" name="logo-google" size="large"></ion-icon>
+              </ion-button>
+              <ion-button type="button" class="ion-margin-start">
+                <ion-icon slot="icon-only" name="logo-microsoft" size="large">
+                </ion-icon>
+              </ion-button>
             </div>
           </ion-card-content>
         </ion-card>
