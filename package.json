@@ -1,8 +1,8 @@
 {
   "name": "drag-wallet",
   "version": "0.0.1",
-  "author": "Ionic Framework",
-  "homepage": "https://ionicframework.com/",
+  "author": "Drag Wallet",
+  "homepage": "https://dragwallet.io/",
   "scripts": {
     "ng": "ng",
     "start": "ionic serve",
@@ -24,8 +24,10 @@
     "@capacitor/core": "4.2.0",
     "@capacitor/haptics": "4.0.1",
     "@capacitor/keyboard": "4.0.1",
+    "@capacitor/preferences": "^4.0.1",
     "@capacitor/status-bar": "4.0.1",
     "@ionic/angular": "^6.1.9",
+    "angular-reactive-validation": "^8.0.0",
     "ionicons": "^6.0.3",
     "rxjs": "~6.6.0",
     "tslib": "^2.2.0",

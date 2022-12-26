@@ -29,3 +29,23 @@
 .d-flex {
     display: flex !important;
 }
+
+// For Alerts =====
+
+.alert-success {
+    .alert-message {
+        color: var(--ion-color-success);
+    }
+}
+
+.alert-warning {
+    .alert-message {
+        color: var(--ion-color-warning);
+    }
+}
+
+.alert-error {
+    .alert-message {
+        color: var(--ion-color-danger);
+    }
+}
