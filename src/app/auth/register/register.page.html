@@ -1,0 +1,61 @@
+<ion-content>
+  <ion-grid>
+    <ion-row class="ion-justify-content-center">
+      <ion-col size-lg="6" size-md="8">
+        <ion-card>
+          <ion-card-header>
+            <ion-card-subtitle>Signup with name, email, and password</ion-card-subtitle>
+            <ion-card-title>Register</ion-card-title>
+          </ion-card-header>
+
+          <ion-card-content>
+            <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+              <ion-item class="ion-no-padding">
+                <ion-label position="floating">First Name</ion-label>
+                <ion-input type="text" formControlName="firstName" inputmode="text"></ion-input>
+                <ion-note slot="error">
+                  <arv-validation-messages for="firstName"></arv-validation-messages>
+                </ion-note>
+              </ion-item>
+              <ion-item class="ion-no-padding">
+                <ion-label position="floating">Last Name (optional)</ion-label>
+                <ion-input type="text" formControlName="lastName" inputmode="text"></ion-input>
+              </ion-item>
+              <ion-item class="ion-no-padding">
+                <ion-label position="floating">Email</ion-label>
+                <ion-input type="email" formControlName="email" inputmode="email"></ion-input>
+                <ion-note slot="error">
+                  <arv-validation-messages for="email"></arv-validation-messages>
+                </ion-note>
+              </ion-item>
+              <ion-item class="ion-no-padding">
+                <ion-label position="floating">Password</ion-label>
+                <ion-input type="password" formControlName="password" inputmode="text"></ion-input>
+                <ion-note slot="error">
+                  <arv-validation-messages for="password"></arv-validation-messages>
+                </ion-note>
+              </ion-item>
+              <div class="ion-margin-top">
+                <ion-button type="submit">Sign Up</ion-button>
+                <ion-button type="button" class="ion-float-right" [routerLink]="['/auth/login']"
+                  [routerDirection]="'root'">
+                  Sign In
+                </ion-button>
+              </div>
+            </form>
+            <div class="ion-margin-top">
+              <p>Or Signup with</p>
+              <ion-button type="button">
+                <ion-icon slot="icon-only" name="logo-google" size="large"></ion-icon>
+              </ion-button>
+              <ion-button type="button" class="ion-margin-start">
+                <ion-icon slot="icon-only" name="logo-microsoft" size="large">
+                </ion-icon>
+              </ion-button>
+            </div>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
